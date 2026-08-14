@@ -31,7 +31,7 @@ static void usage(void);
 int
 main(int argc, char *argv[])
 {
-	char map[89];
+	char map[255];
 	int ch, i, len, map_len, mask;
 
 	if (pledge("stdio", NULL) == -1)
