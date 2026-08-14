@@ -91,6 +91,8 @@ main(int argc, char *argv[])
 	if (mask & CH_SYMBOL) {
 		for (i = '!'; i <= '/'; i++)
 			map[map_len++] = i;
+		for (i = ':'; i <= '?'; i++)
+			map[map_len++] = i;
 		for (i = '['; i <= '`'; i++)
 			map[map_len++] = i;
 		for (i = '{'; i <= '~'; i++)
