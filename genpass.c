@@ -66,7 +66,7 @@ main(int argc, char *argv[])
 	if (argc == 1) {
 		const char *errstr;
 
-		len = strtonum(argv[0], 0, INT_MAX, &errstr);
+		len = strtonum(argv[0], 1, INT_MAX, &errstr);
 		if (errstr != NULL)
 			errx(1, "length was %s", errstr);
 	}
