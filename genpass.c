@@ -106,10 +106,10 @@ main(int argc, char *argv[])
 
 	for (; len != 0; len--)
 		if (putchar(map[arc4random_uniform(map_len)]) == EOF)
-			err(1, "putchar");
+			err(1, "stdout");
 
 	if (putchar('\n') == EOF)
-		err(1, "putchar");
+		err(1, "stdout");
 }
 
 static void
